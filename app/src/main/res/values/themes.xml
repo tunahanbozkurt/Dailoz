@@ -30,4 +30,22 @@
         <item name="android:textSize">@dimen/sp16</item>
         <item name="android:textColor">@color/button_blue</item>
     </style>
+
+    <style name="HindSiliguri_semibold_sp36_blue">
+        <item name="android:fontFamily">@font/hind_siliguri_semibold</item>
+        <item name="android:textSize">@dimen/sp36</item>
+        <item name="android:textColor">@color/button_blue</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:drawablePadding">@dimen/dp12</item>
+        <item name="android:fontFamily">@font/hind_siliguri_medium</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@color/text_blue</item>
+        <item name="android:textColorHint">@color/hint_text</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="maxWidth">@dimen/dp488</item>
+        <item name="layout_constraintWidth_max">@dimen/dp488</item>
+        <item name="layout_constraintWidth">true</item>
+    </style>
 </resources>

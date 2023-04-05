@@ -14,24 +14,24 @@
             android:id="@+id/iv_account_screen"
             android:layout_width="@dimen/dp291"
             android:layout_height="@dimen/dp294"
-            android:layout_marginTop="@dimen/dp128"
             android:layout_marginHorizontal="@dimen/dp42"
+            android:layout_marginTop="@dimen/dp128"
+            android:contentDescription="@string/app_name"
             android:src="@drawable/account_screen_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/app_name" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/iv_account_screen_appname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/dailoz_text"
             android:layout_marginTop="@dimen/dp74"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/dailoz_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_account_screen"
-            android:contentDescription="@string/app_name" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_account_screen" />
 
         <TextView
             android:id="@+id/tv_account_screen"
@@ -50,26 +50,33 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_account_screen_login"
+            style="@style/BlueButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/dp36"
             android:layout_marginTop="@dimen/dp64"
             android:text="@string/login"
-            style="@style/BlueButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_account_screen" />
 
         <TextView
             android:id="@+id/tv_account_screen_signUp"
+            style="@style/HindSiliguri_semibold_sp16_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sign_up"
             android:layout_marginTop="@dimen/dp24"
-            style="@style/HindSiliguri_semibold_sp16_blue"
+            android:text="@string/sign_up"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_account_screen_login" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp54"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_account_screen_signUp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
