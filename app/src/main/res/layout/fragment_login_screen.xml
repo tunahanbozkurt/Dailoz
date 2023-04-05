@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.login_screen.LoginScreenFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_login_screen_login"
+            style="@style/HindSiliguri_semibold_sp36_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp36"
+            android:layout_marginTop="@dimen/dp100"
+            android:text="@string/login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.dailoz.presentation.custom_views.EmailTextField
+            android:id="@+id/emailTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp36"
+            android:layout_marginTop="@dimen/dp74"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login_screen_login" />
+
+        <com.example.dailoz.presentation.custom_views.PasswordTextField
+            android:id="@+id/passwordTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp36"
+            android:layout_marginTop="@dimen/dp32"
+            app:layout_constraintTop_toBottomOf="@+id/emailTextField"
+            tools:layout_editor_absoluteX="36dp" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            style="@style/HindSiliguri_regular_sp12_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:text="@string/forgot_password"
+            app:layout_constraintEnd_toEndOf="@+id/passwordTextField"
+            app:layout_constraintTop_toBottomOf="@+id/passwordTextField" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButton"
+            style="@style/BlueButton"
+            android:layout_width="@dimen/fill_constraints"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp36"
+            android:layout_marginTop="@dimen/dp54"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password" />
+
+        <include
+            android:id="@+id/divider"
+            layout="@layout/or_with_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp36"
+            android:layout_marginTop="@dimen/dp54"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
+
+        <ImageView
+            android:id="@+id/ic_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_google"
+            android:layout_marginTop="@dimen/dp30"
+            app:layout_constraintEnd_toStartOf="@+id/ic_facebook"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/ic_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp16"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_facebook"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_google"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_google"
+            app:layout_constraintTop_toTopOf="@+id/ic_google" />
+
+        <TextView
+            android:id="@+id/tv_dont_have_an_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp124"
+            android:text="@string/dont_have_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ic_google" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_dont_have_an_account" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

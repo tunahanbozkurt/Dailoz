@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="text_blue">#2C406E</color>
-    <color name="button_blue">#5B67CA</color>
+    <color name="primary_blue">#5B67CA</color>
     <color name="hint_text">#C6CEDD</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="edit_text_line">#E3E8F1</color>
